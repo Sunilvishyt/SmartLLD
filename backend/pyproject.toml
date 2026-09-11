@@ -5,9 +5,16 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "aiosqlite>=0.22.1",
+    "alembic>=1.19.2",
+    "asyncpg>=0.31.0",
     "dotenv>=0.9.9",
     "fastapi>=0.141.1",
     "langchain>=1.4.0",
     "langchain-google-genai>=4.4.0",
+    "psycopg2-binary>=2.9.13",
+    "pydantic-settings>=2.15.0",
+    "python-dotenv>=1.2.3",
+    "sqlalchemy>=2.0.52",
     "uvicorn>=0.52.4",
 ]
