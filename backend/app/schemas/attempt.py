@@ -14,6 +14,7 @@ class AttemptResponse(BaseModel):
 class AttemptHistoryResponse(BaseModel):
     attempt_id: int
     attempt_number: int
+    problem_id: str
     score: Optional[int]
     created_at: datetime
     status: str

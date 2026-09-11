@@ -58,6 +58,7 @@ async def get_attempts_history(db: AsyncSession): # Optionally pass user_id/prob
         history.append({
             "attempt_id": attempt.id,
             "attempt_number": attempt.attempt_number,
+            "problem_id" : attempt.problem_id,
             "score": evaluation.overall_score if evaluation else None,
             "created_at": attempt.created_at,
             "status": evaluation.status if evaluation else "Unknown"
